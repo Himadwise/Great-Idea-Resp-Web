@@ -1,0 +1,186 @@
+/* External Css for fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Titillium+Web:wght@400;700&display=swap');
+
+/* CSS Reset Code  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset Code End. Never change */
+
+/* Great Idea Compnay Css */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Bangers', cursive;
+}
+
+.logo{
+    display: block;
+    margin: 1rem auto;
+    width: 300px;
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    border-top: 1px  solid #b4b6b7;
+    border-bottom: 1px  solid #b4b6b7;
+    padding: 0.5rem 0;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid black;
+}
+header h1{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+header button{
+    border: 1px solid black;
+    color: black;
+    padding: 0.1rem 2.5rem;
+}
+#hero-img{
+    display: none;
+}
+
+section{
+    margin: 0 1rem;
+}
+section div{
+    margin: 2rem 0;
+}
+section h2{
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+}
+section p{
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#secondary-details{
+    border-bottom: 2px solid black;
+}
+
+#middle-img{
+    width: 100%;
+}
+
+address{
+    font-style: normal;
+}
+address p{
+    margin: 0 0 0.75rem;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* media query one */
+@media (min-width:600px){
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav a{
+        border: 0;
+    }
+    header h1{
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    header button{
+        font-size: 1rem;
+    }
+    
+    #primary-details, #secondary-details{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* second media query */
+@media (min-width:800px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+    header div{
+        width: 50%;
+    }
+    #hero-img{
+        display: block;
+        width: 350px;
+        height: auto;
+        border-radius: 50%;
+    }
+}
